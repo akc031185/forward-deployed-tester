@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Forward Deployed Tester — Field Guide</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="masthead"><div class="wrap masthead__inner">
+  <div class="masthead__title"><b>◑</b> The Forward Deployed Tester — Field Guide</div>
+  <nav class="masthead__nav">
+    <a href="index.html">Contents</a>
+    <a href="process.html">Process</a>
+    <a href="https://github.com/akc031185/forward-qa-agents/blob/main/docs/forward-deployed-tester-thesis.md" target="_blank" rel="noopener">Thesis</a>
+    <a href="https://github.com/akc031185/forward-qa-agents/blob/main/PROGRESS.md" target="_blank" rel="noopener">Progress log</a>
+    <a href="https://akc031185.github.io/sdet-architect/" target="_blank" rel="noopener">SDET Architect</a>
+    <a href="https://akc031185.github.io/qa-agents/" target="_blank" rel="noopener">QA Agents</a>
+  </nav>
+</div></header>
+<section class="hero">
+  <div class="hero__blobs" aria-hidden="true">
+    <svg style="top:-60px;right:-120px;width:460px" viewBox="0 0 460 460"><path fill="#FFE9C7" d="M230 20c95 0 210 60 210 175S345 420 230 420 20 330 20 215 135 20 230 20Z" opacity=".8"/></svg>
+    <svg style="bottom:-90px;left:-140px;width:380px" viewBox="0 0 380 380"><path fill="#DDF6EF" d="M190 10c80 10 180 70 170 180S270 375 175 365 5 280 15 175 110 0 190 10Z" opacity=".8"/></svg>
+    <svg style="top:120px;left:52%;width:120px" viewBox="0 0 120 120"><circle cx="60" cy="60" r="58" fill="#E9ECFF" opacity=".9"/></svg>
+  </div>
+  <div class="wrap">
+  <div class="eyebrow hero__eyebrow">Plate 44 · a field guide of its own</div>
+  <h1 class="display">Vendors deliver the AI. Somebody has to measure what it actually delivered.</h1>
+  <ul class="bul lead"><li>Point the agent at a running web app: it crawls, records what is broken, and provisions a Playwright + Playwright MCP project in one run.</li><li>That run is the surface probe of a seven-phase engagement: baseline, golden set, eval cube, cost ledger, pilot, verdict. The <a class="doclink" href="process.html">process page</a> lays it out.</li><li>Runs to completion with no model at all; a local open-weight model only polishes text.</li></ul>
+  <div class="hero__crew" aria-hidden="true">
+    <svg viewBox="0 0 76 84"><rect x="6" y="18" width="52" height="52" rx="16" fill="#FF6B6B"/><circle cx="24" cy="40" r="3.4" fill="#3B3532"/><circle cx="40" cy="40" r="3.4" fill="#3B3532"/><path d="M24 52c2.8 3 5.6 4.5 8 4.5s5.2-1.5 8-4.5" fill="none" stroke="#3B3532" stroke-width="3" stroke-linecap="round"/></svg>
+  </div>
+  <div class="hero__meta">
+    <div class="stat stat--a"><div class="num">4</div><div class="lbl">Phases in one run: recon, findings, provision, report</div></div>
+    <div class="stat stat--b"><div class="num">11</div><div class="lbl">Files provisioned on the demo site, 9 locators</div></div>
+    <div class="stat stat--c"><div class="num">0</div><div class="lbl">Paid API calls, by construction</div></div>
+  </div>
+  </div>
+</section>
+
+<section class="primer"><div class="wrap"><div class="primer__grid">
+  <div>
+    <div class="eyebrow">What "agent" means here</div>
+    <h2 class="display">Scoped automation, not a chat assistant.</h2>
+    <ul class="bul"><li>One folder, one CLI, a few REST routes, one <code>node:test</code> suite.</li><li>Every deliverable exists with <code>LLM_PROVIDER=none</code>: crawl, findings, generated project, report.</li><li>Findings and artifacts land in SQLite, so every number in a report traces to a run id.</li><li>The adapter only talks to a model you run yourself; public endpoints are rejected.</li></ul>
+  </div>
+  <div class="primer__figure">"One job, one contract — composable, scriptable, and boring by design."</div>
+</div></div></section>
+
+
+    <section class="section s6" id="probe">
+      <div class="wrap">
+        <div class="section__head"><span class="section__no">Plate 44</span><h2 class="display">Landing in a new environment</h2></div>
+        <ul class="bul section__desc"><li>The first week of an engagement, done in one run.</li><li>The surface probe of the Discover phase on the <a class="doclink" href="process.html">process page</a>: crawl the running app, record findings by severity, leave a runnable Playwright + MCP project behind.</li><li>The deterministic regression layer exists before anyone argues about what the AI delivered.</li></ul>
+        <div class="roster">
+      <div class="rcard rcard--toolkit">
+        <div class="rcard__no">Agent 44</div>
+        <div class="rcard__name">The Forward Deployed Tester</div>
+        <div class="rcard__one">Point it at a running web app; it crawls, records findings and provisions a complete Playwright + MCP test project in one run.</div>
+        <div class="rcard__actions">
+          <a class="rcard__code" href="https://github.com/akc031185/forward-qa-agents/blob/main/src/agents/forward-deployed-tester/index.ts" title="View the annotated source">&#8249;&#47;&#8250; View code</a>
+          <a class="rcard__tag" href="agents/the-forward-deployed-tester.html">Details &rarr;</a>
+        </div>
+      </div></div>
+      </div>
+    </section>
+
+<footer class="footer"><div class="wrap">The Forward Deployed Tester · code in <a class="doclink" href="https://github.com/akc031185/forward-qa-agents">forward-qa-agents</a> · companion guides: <a class="doclink" href="https://akc031185.github.io/sdet-architect/">The SDET Architect</a> and the <a class="doclink" href="https://akc031185.github.io/qa-agents/">QA Agents field guide</a>.</div></footer>
+</body></html>
