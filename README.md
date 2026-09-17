@@ -14,6 +14,6 @@ _build/author/diagrams.mjs   the inline SVG figures
 npm run catalog:author       regenerates this folder
 ```
 
-Companion guides: [The SDET Architect](https://akc031185.github.io/sdet-architect/) · [QA Agents](https://akc031185.github.io/qa-agents/)
+Companion guides: [The SDET Architect](https://akc031185.github.io/sdet-architect/) · [The AI Site Auditor](https://akc031185.github.io/ai-site-auditor/) · [The SDET Roadmap](https://akc031185.github.io/sdet-roadmap/) · [QA Agents](https://akc031185.github.io/qa-agents/)
 
 MIT.
